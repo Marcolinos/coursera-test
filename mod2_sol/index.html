@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>mod_2_assignment</title>
+	<style>
+
+/****** Base styles *******/
+
+/*Browser margin delete*/
+body {
+	margin: 0px; 
+}
+
+/*main heading style */
+h1 {
+	text-align: center;
+	font-family: arial;
+}
+
+* {
+	box-sizing: border-box;
+	
+}
+
+/*gray box style*/
+
+.box {
+	float: left;
+	margin-left: 1%;
+  	margin-right: 0%;
+  	background-color: 	#C0C0C0;
+	border: 3px solid black;
+ 	text-align: left;
+ 	font-family: sans-serif;
+ 	margin-top: 40px;
+	margin-bottom: 20px;
+
+}
+
+/* section heading style*/
+
+.title_box {
+	position: relative;
+	top: 0px;
+	text-align: center;
+	border-bottom: 3px solid black;
+	border-left: 3px solid black;
+	width: 150px;
+	margin: 0px;
+	float: right;
+	overflow: auto;
+}
+
+/* section heading text style*/
+
+.title_text{
+	margin: 0px;
+}
+
+#fish{
+	background-color: 	#FF00FF;
+
+}
+
+#meat{
+	background-color: 	#FF0000;
+	color: #FFFFFF;
+
+}
+
+#wine{
+	background-color: 	#FFFF00;
+
+}
+
+/* text in gray box style */
+
+.menu {	
+	position: relative;
+	top: 20px;
+	padding: 15px 15px 15px 15px;
+
+}
+
+
+/****** Large device only ******/
+
+@media (min-width: 992px) {
+
+  #section1 {
+    width: 32%;
+  }
+  #section2 {
+  	width: 32%;
+  }
+  #section3 {
+  	width: 32%;
+  }
+  }
+
+
+/****** Medium device only *****/
+
+@media (min-width: 768px) and (max-width: 991px) {
+  #section1 {
+    width: 48%;
+    margin-left: 1%;
+  	margin-right: 1%;
+  }
+  #section2 {
+  	width: 48%;
+  }
+  #section3 {
+  	width: 98%;
+  }
+}
+/****** Small device only *****/
+
+@media (max-width: 767px) {
+
+  #section1 {
+    width: 98%;
+  }
+  #section2 {
+  	width: 98%;
+  }
+  #section3 {
+  	width: 98%;
+  }
+  }
+
+</style>
+</head>
+
+<body>
+ 
+ <h1>
+ 	Our menu
+ </h1>
+ 
+ <div class="box" id="section1"> 
+	<div class= "title_box" id="fish">
+		<h2 class="title_text">
+			Fish
+		</h2>
+	</div> 
+
+	<p class="menu">
+		Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dicta beatae voluptatibus veniam placeat iure unde assumenda porro neque voluptate esse sit magnam facilis labore odit, provident a ea! Nulla, minima.Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eius nemo vitae, cupiditate odio magnam reprehenderit esse eum reiciendis repellendus incidunt sequi! Autem, laudantium, accusamus. Doloribus tempora alias minima laborum, provident!
+	</p>
+ </div>
+
+ <div class="box" id="section2"> 
+ 	<div class="title_box" id="meat">
+		<h2 class="title_text">
+			Meat
+		</h2>
+ </div>
+
+	<p class="menu">
+		Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dicta beatae voluptatibus veniam placeat iure unde assumenda porro neque voluptate esse sit magnam facilis labore odit, provident a ea! Nulla, minima.Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eius nemo vitae, cupiditate odio magnam reprehenderit esse eum reiciendis repellendus incidunt sequi! Autem, laudantium, accusamus. Doloribus tempora alias minima laborum, provident!
+		Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dicta beatae voluptatibus veniam placeat iure unde assumenda porro neque voluptate esse sit magnam facilis labore odit, provident a ea! Nulla, minima.Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eius nemo vitae, cupiditate odio magnam reprehenderit esse eum reiciendis repellendus incidunt sequi! Autem, laudantium, accusamus. Doloribus tempora alias minima laborum, provident!
+	</p>
+ </div>
+
+ <div  class="box" id="section3">
+ 	<div class="title_box" id="wine"> 
+		<h2 class="title_text">
+			Wine
+		</h2>
+	</div>
+
+	<p class="menu">
+		Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quia distinctio aliquid cupiditate perferendis fuga, sit quasi alias vero sunt non, ratione earum dolores nihil! Consequuntur pariatur totam incidunt soluta expedita.
+	</p>
+ </div>
+ 
+</body>
+</html>
